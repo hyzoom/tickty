@@ -36,7 +36,7 @@ public class SplashScreen extends Activity {
                 } finally {
                     if (!stop) {
                         if (regId.equals("")) {
-                            Intent i = new Intent(SplashScreen.this, RegisterActivity.class);
+                            Intent i = new Intent(SplashScreen.this, LogIn.class);
                             startActivity(i);
                         } else {
                             Intent i = new Intent(SplashScreen.this, FeedListActivity.class);

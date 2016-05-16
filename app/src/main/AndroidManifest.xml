@@ -38,6 +38,9 @@
             android:name=".RegisterActivity"
             android:screenOrientation="portrait"></activity>
         <activity
+            android:name=".LogIn"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".SingleSubject"
             android:screenOrientation="portrait"></activity>
         <activity

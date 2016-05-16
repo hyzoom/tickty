@@ -194,8 +194,10 @@ public class FeedListActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-        if (id == R.id.action_share) {
-            shareText("", "");
+        if (id == R.id.action_chat) {
+            Toast.makeText(FeedListActivity.this, "Go TO Chat Activity", Toast.LENGTH_LONG).show();
+        } else if (id == R.id.action_edit_account) {
+            Toast.makeText(FeedListActivity.this, "Go TO Update Activity", Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
     }

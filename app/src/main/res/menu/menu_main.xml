@@ -8,9 +8,23 @@
         android:title="Search"
         app:actionViewClass="android.support.v7.widget.SearchView"
         app:showAsAction="always|collapseActionView" />
+    <!--<item-->
+        <!--android:id="@+id/action_share"-->
+        <!--android:icon="@android:drawable/ic_menu_share"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Share"-->
+        <!--app:showAsAction="always|collapseActionView" />-->
+
     <item
-        android:id="@+id/action_share"
-        android:icon="@android:drawable/ic_menu_share"
+        android:id="@+id/action_edit_account"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:orderInCategory="100"
+        android:title="Share"
+        app:showAsAction="always|collapseActionView" />
+
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@android:drawable/sym_action_chat"
         android:orderInCategory="100"
         android:title="Share"
         app:showAsAction="always|collapseActionView" />

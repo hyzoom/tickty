@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,9 +17,11 @@ import com.squareup.picasso.Picasso;
  * Created by hp on 02/01/2016.
  */
 public class SingleSubject extends AppCompatActivity {
-    TextView titleTV, contentTV;
+    TextView titleTV, contentTV, count;
     ImageView imageURL;
     String title, content, image_url;
+    Button buyButton;
+    int r =7;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,15 @@ public class SingleSubject extends AppCompatActivity {
         contentTV = (TextView) findViewById(R.id.contentTV);
         imageURL = (ImageView) findViewById(R.id.imageURL);
 
+        count = (TextView) findViewById(R.id.count);
+        buyButton = (Button) findViewById(R.id.buyButton);
+
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                count.setText("" + r++);
+            }
+        });
         Picasso.with(getApplicationContext()).load(image_url)
                 .error(R.drawable.back)
                 .placeholder(R.drawable.back)
