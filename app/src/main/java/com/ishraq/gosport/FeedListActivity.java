@@ -142,7 +142,7 @@ public class FeedListActivity extends AppCompatActivity {
     }
 
     class CustomOnItemSelectedListener implements AdapterView.OnItemSelectedListener {
-        String idArrays[] = {"1", "2", "3", "4", "5"};
+        String idArrays[] = {"1", "10", "11", "12", "13"};
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
             if (pos == 0) {
@@ -256,7 +256,6 @@ public class FeedListActivity extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void result) {
 //                pDialog.dismiss();
-                Toast.makeText(FeedListActivity.this, "تمت الاضافة \n ستظهر قصة الشهيد خلال ساعات", Toast.LENGTH_LONG).show();
                 mRegisterTask = null;
             }
         };
